@@ -324,7 +324,7 @@
  ;; Properties to exclude from having property pages
  ;; Example usage:
  ;; :property-pages/excludelist #{:duration :author}
-:property-pages/excludelist #{:duration :author :gadm}
+:property-pages/excludelist #{:duration :author :gadm :located-at :present-in}
  
  ;; By default, property value separated by commas will not be treated as
  ;; page references. You can add properties to enable it.
@@ -421,4 +421,9 @@
  ;;   - :triple-lowbar (default)
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
- :file/name-format :triple-lowbar}
+ :file/name-format :triple-lowbar
+ :feature/enable-journals? false
+ :default-home {:page "开始"}
+ :ui/show-brackets? false
+ :publishing/all-pages-public? true
+ :feature/enable-whiteboards? false}
